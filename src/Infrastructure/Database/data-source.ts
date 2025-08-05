@@ -2,6 +2,7 @@ import "reflect-metadata";
 import { DataSource } from "typeorm";
 
 import { Customer } from '../../Domain/Entities/Customer';
+import { Bill } from "src/Domain/Entities/Bill";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -12,6 +13,6 @@ export const AppDataSource = new DataSource({
     database: "db_ferreteria",
     synchronize: true,
     logging: false,
-    entities: [Customer],
+    entities: [Customer, Bill],
     migrations: [],
 });
