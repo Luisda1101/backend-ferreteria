@@ -25,6 +25,6 @@ export class Bill extends BaseEntity {
     @ManyToOne(() => Customer, customer => customer.bills, { nullable: false })
     @JoinColumn({ name: "customer_id" })
     @AutoMap(() => Customer)
-    customer: Customer;
+    customer!: Customer;
 
 }

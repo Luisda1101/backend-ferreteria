@@ -1,6 +1,5 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-
 import { Customer } from '../../Domain/Entities/Customer';
 import { Bill } from "src/Domain/Entities/Bill";
 
